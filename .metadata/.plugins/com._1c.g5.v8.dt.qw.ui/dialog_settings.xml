@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="com._1c.g5.v8.dt.qw.ui.isSourcesTreeSorted" value="false"/>
+	<item key="com._1c.g5.v8.dt.qw.ui.isTablesForChangeSet" value="false"/>
+	<item key="com._1c.g5.v8.dt.qw.ui.isShowExtendedFieldsSet" value="false"/>
+	<section name="com._1c.g5.v8.dt.qw.ui.QueryWizard">
+		<item key="width" value="1100"/>
+		<item key="heigth" value="800"/>
+		<item key="position_x" value="0"/>
+		<item key="position_y" value="174"/>
+	</section>
+	<section name="com._1c.g5.v8.dt.qw.ui.dialogs.VirtTableParamsDialog">
+		<item key="width" value="298"/>
+		<item key="heigth" value="127"/>
+		<item key="position_x" value="401"/>
+		<item key="position_y" value="511"/>
+	</section>
+	<section name="com._1c.g5.v8.dt.qw.ui.dialogs.QueryExpressionEditDialog">
+		<item key="width" value="600"/>
+		<item key="heigth" value="700"/>
+		<item key="position_x" value="250"/>
+		<item key="position_y" value="224"/>
+	</section>
+</section>
