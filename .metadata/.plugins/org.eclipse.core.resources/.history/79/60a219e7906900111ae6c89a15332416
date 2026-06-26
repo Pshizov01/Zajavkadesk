@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="93a2e758-dd0c-4186-9cbb-e7f30480d083">
+  <name>HTTPСервис</name>
+  <synonym>
+    <key>ru</key>
+    <value>HTTPСервис</value>
+  </synonym>
+  <rootURL>API</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="2313db1d-055e-480c-941e-779f7423f6c7">
+    <name>Категории</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категории</value>
+    </synonym>
+    <template>/categories</template>
+    <methods uuid="21315519-062a-421f-a1aa-54621058d76d">
+      <name>ПолучитьКатегории</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить категории</value>
+      </synonym>
+      <handler>КатегорииПолучитьКатегории</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="b3e0f92e-9596-4666-a549-f88ddd7c5220">
+    <name>Справочники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочники</value>
+    </synonym>
+    <template>/dictionaries</template>
+    <methods uuid="d9b2da32-6ac6-4b2e-9a36-1566bd35346c">
+      <name>ПолучитьСправочники</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить справочники</value>
+      </synonym>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="cb494f2e-98b3-42e4-81a5-0d1b9484050d">
+    <name>РегистрацияПользователей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрация пользователей</value>
+    </synonym>
+    <template>/users/register</template>
+    <methods uuid="9b0895ee-cbdc-4e4b-a701-4d35616b2967">
+      <name>ЗарегистрироватьПользователя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Зарегистрировать пользователя</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="0a665f05-1312-4d8b-967e-12b5a2eedbb0">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <template>/users/{telergam_id}</template>
+  </urlTemplates>
+</mdclass:HTTPService>
