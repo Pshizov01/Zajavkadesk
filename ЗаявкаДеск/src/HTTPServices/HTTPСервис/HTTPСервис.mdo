@@ -73,4 +73,107 @@
       <handler>ПользовательПолучитьПользователя</handler>
     </methods>
   </urlTemplates>
+  <urlTemplates uuid="44508439-e703-4c2b-9662-db4c38b1bfe4">
+    <name>Заявки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявки</value>
+    </synonym>
+    <template>/tickets</template>
+    <methods uuid="9e3c2b32-67f8-468b-830e-15d58c437e25">
+      <name>СоздатьЗаявку</name>
+      <synonym>
+        <key>ru</key>
+        <value>Создать заявку</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>ЗаявкиСоздатьЗаявку</handler>
+    </methods>
+    <methods uuid="f5f7edb1-65f6-4d66-9c5f-1ca273eaefb0">
+      <name>ПолучитьСписок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить список</value>
+      </synonym>
+      <handler>ЗаявкиПолучитьСписок</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="92228770-6d90-4cba-9cb6-1cf2a74f28d7">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+    <template>/tickets/{id}</template>
+    <methods uuid="1e1505a6-4f35-4041-847a-0573f57c0da7">
+      <name>ПолучитьЗаявку</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить заявку</value>
+      </synonym>
+      <handler>ЗаявкаПолучитьЗаявку</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="f073f038-1336-4ea4-8797-10cb0ae386ac">
+    <name>ОжидающиеЗаявки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидающие заявки</value>
+    </synonym>
+    <template>/tickets/pending</template>
+    <methods uuid="5d0d6659-64d3-4b97-b189-c45d6e439943">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>ОжидающиеЗаявкиПолучить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="419d5a0c-ad81-4634-ad99-5e7499138716">
+    <name>НазначеннаяЗаявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначенная заявка</value>
+    </synonym>
+    <template>/tickets/assigned/{telegram_id}</template>
+    <methods uuid="ece6820d-8dec-4c02-929e-391c0a7706f6">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>НазначеннаяЗаявкаПолучить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="590bbf79-d8cc-4c47-b011-032fa6ce87d9">
+    <name>НазначениеИсполнителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначение исполнителя</value>
+    </synonym>
+    <template>/tickets/{id}/assign</template>
+    <methods uuid="1458719a-0acf-4bd0-a2d1-473c5633cfad">
+      <name>Метод</name>
+      <synonym>
+        <key>ru</key>
+        <value>Метод</value>
+      </synonym>
+      <httpMethod>PATCH</httpMethod>
+      <handler>Заявкаassign</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="56fd516a-a534-441a-b258-706de54c6961">
+    <name>ИзменениеСтатуса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение статуса</value>
+    </synonym>
+    <template>/tickets/{id}/status</template>
+    <methods uuid="d3b2c306-d819-4ef2-9bea-6ca0708d9869">
+      <name>Метод1</name>
+      <httpMethod>PATCH</httpMethod>
+      <handler>ЗаявкаСтатус</handler>
+    </methods>
+  </urlTemplates>
 </mdclass:HTTPService>
