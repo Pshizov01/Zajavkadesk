@@ -40,7 +40,10 @@
     <languageCode>ru</languageCode>
   </languages>
   <roles>Role.ПолныеПрава</roles>
+  <commonModules>CommonModule.РаботаСTelegram</commonModules>
   <httpServices>HTTPService.HTTPСервис</httpServices>
+  <scheduledJobs>ScheduledJob.ОбработкаУведомленийЗаявок</scheduledJobs>
+  <constants>Constant.ТокенTelegramБота</constants>
   <catalogs>Catalog.Категории</catalogs>
   <catalogs>Catalog.Пользователи</catalogs>
   <documents>Document.Заявка</documents>
